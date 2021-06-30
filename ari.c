@@ -7,7 +7,7 @@ string ari (string s)
 {
 int words=0,sentence=0,character=0;
 int ch;
-for(i=0;s[i]!='\0';i++)
+for(int i=0;s[i]!='\0';i++)
 {
 if(s[i]=='\n'||s[i]=='?'||s[i]=='!')
 {
@@ -27,11 +27,11 @@ character++;
 
 }
 ch= (4.71*(character/words)) + (.5*(words/sentence)) - 21.43;
-for(j=0;j++)
+for(int j=0;j++)
 {
 if(ch>=j&&ch<(j+1))
 {
-ch=int (j+1);
+ch=(j+1);
 break;
 }
 }
@@ -63,6 +63,5 @@ else if(ch==13)
 return("College student");
 else if(ch==14)
 return("Professor");
-
 }
 
