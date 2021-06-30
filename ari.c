@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <assert.h>
+#include <string.h>
+#include <cs50.h>
 string ari (string s)
 {
 int words=0,sentence=0,character=0;
