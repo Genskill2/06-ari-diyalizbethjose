@@ -2,6 +2,7 @@
 #include <assert.h>
 #include <string.h>
 #include <cs50.h>
+
 string ari (string s)
 {
 int words=0,sentence=0,character=0;
@@ -29,8 +30,10 @@ ch= (4.71*(character/words)) + (.5*(words/sentence)) - 21.43;
 for(j=0;j++)
 {
 if(ch>=j&&ch<(j+1))
+{
 ch=int (j+1);
 break;
+}
 }
 if(ch==1)
 return("Kindergarten");
@@ -62,3 +65,4 @@ else if(ch==14)
 return("Professor");
 
 }
+
